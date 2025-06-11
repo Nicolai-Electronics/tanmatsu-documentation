@@ -1,6 +1,6 @@
 # Tanmatsu documentation
 
-Currently the contents of this repository are used in a Hugo based website published at [https://nicolaielectronics.nl](nicolaielectronics.nl).switching to a standalone website is planned.
+Currently the contents of this repository are used in a Hugo based website published at [nicolaielectronics.nl](https://nicolaielectronics.nl).switching to a standalone website is planned.
 
 ## License
 
