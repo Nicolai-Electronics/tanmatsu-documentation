@@ -56,7 +56,7 @@ The keyboard and corresponding metal dome sheet will be available as a spare par
 
 Single cell protected Lithium Polymer battery with PH-2.0 style connector.
 The connector and pinout are compatible with the battery connector on Adafruit boards.
- 
+
 | Parameter                | Value                                  |
 |--------------------------|----------------------------------------|
 | Capacity                 | 2500 mAh                               |

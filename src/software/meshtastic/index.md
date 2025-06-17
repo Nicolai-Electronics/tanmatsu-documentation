@@ -1,9 +1,4 @@
----
-title: "Meshtastic"
-linkTitle: "Meshtastic"
-nodateline: true
-weight: 3
----
+# Meshtastic
 
 This document describes how to install Meshtastic compatible firmware onto your Tanmatsu. The Meshtastic firmware for Tanmatsu is in active development and not yet fully stable. You might experience crashes and bugs.
 

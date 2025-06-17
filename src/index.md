@@ -1,19 +1,10 @@
----
-title: "Tanmatsu"
-linkTitle: "Tanmatsu"
-nodateline: true
-weight: 8
----
+# Introduction
 
 Tanmatsu is the dream terminal device for hackers, makers, and tech enthousiasts. Based around the powerful ESP32-P4 microcontroller, this device provides an accessible way to make, hack, and tinker on the go.
 
 Tanmatsu lets you program on the go and communicate over long distances using LoRa whilst also providing advanced connectivity and extendability options for hardware hacking and development.
 
 ![tanmatsu](tanmatsu.png)
-
-{{% alert title="Blog" color="warning" %}}
-Interested? See our blog for project updates.
-{{% /alert %}}
 
 ## Project
 
@@ -47,7 +38,7 @@ A 3D printed case is included with every Tanmatsu, this sturdy case will allow t
 
 The launcher firmware allows starting user made applications and in addition it provides access to a marketplace for applications where developers can publish their creations. Apps can be downloaded and installed directly on the device.
 
-## Hardware features - summary
+## Summary of hardware features
 
  - ESP32-P4 dual-core 400MHz RISC-V microcontroller with 32MB of built-in PSRAM
  - ESP32-C6 radio module for WiFi, BLE and IEEE 802.15.4 mesh networking connectivity
@@ -62,18 +53,29 @@ The launcher firmware allows starting user made applications and in addition it 
  - Side facing expansion port with both SAO and PMOD capabilities
  - Back facing expansion port for expanding functionality using personality modules
 
-## Software features - summary
+## Summary of software features
 
  - Launcher menu for easy access to multiple applications and firmwares
  - Access to user generated content and applications repository via the hub app
 
 ## Open source
 
-The hardware design will be made fully open source and available under a permissive license (CERN-OHL-P). The design can be edited using the open source PCB CAD application KiCAD, allowing everyone to edit the design without any roadblocks.
+The hardware design has been made fully open source and available under a permissive license (CERN-OHL-P). The design can be edited using the open source PCB CAD application KiCAD, allowing everyone to edit the design without any roadblocks.
 
-The board support package and launcher firmware will also be made open source under a permissive license (MIT), enabling modifications and improvements by the community and granting users and developers complete freedom and control.
+The board support package and launcher firmware are also open source under a permissive license (MIT), enabling modifications and improvements by the community and granting users and developers complete freedom and control.
+
+You can find the hardware design [here](https://github.com/Nicolai-Electronics/tanmatsu-hardware), the board support package [here](https://github.com/badgeteam/esp32-component-badge-bsp) and the launcher firmware [here](https://github.com/Nicolai-Electronics/tanmatsu-launcher/).
 
 ## Personality modules
 
 Whilst the base Tanmatsu device already provides lots of functionality we plan on creating and making available multiple personality modules for extending the functioality in ways useful to you.
 More information about the planned personality modules will be made available soon.
+
+```{toctree}
+:hidden:
+
+self
+getting_started/index
+hardware/index
+software/index
+```

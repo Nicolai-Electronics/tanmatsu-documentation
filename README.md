@@ -1,6 +1,6 @@
 # Tanmatsu documentation
 
-Currently the contents of this repository are used in a Hugo based website published at [nicolaielectronics.nl](https://nicolaielectronics.nl).switching to a standalone website is planned.
+This repository contains the source files for the docs.tanmatsu.cloud Tamatsu documentation website.
 
 ## License
 

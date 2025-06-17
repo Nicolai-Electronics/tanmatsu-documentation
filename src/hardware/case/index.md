@@ -1,9 +1,4 @@
----
-title: "Tanmatsu: 3D printed case"
-linkTitle: "3D printed case"
-nodateline: true
-weight: 2
----
+# 3D printed case
 
 Information about the 3D printed case for Tanmatsu.
 

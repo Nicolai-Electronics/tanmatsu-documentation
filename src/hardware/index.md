@@ -1,9 +1,4 @@
----
-title: "Tanmatsu: hardware"
-linkTitle: "Hardware"
-nodateline: true
-weight: 1
----
+# Hardware
 
 This page describes all the hardware on the Tanmatsu main board, explaining how everything is connected.
 

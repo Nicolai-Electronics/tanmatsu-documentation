@@ -1,9 +1,4 @@
----
-title: "BadgeLink"
-linkTitle: "BadgeLink"
-nodateline: true
-weight: 2
----
+# BadgeLink
 
 BadgeLink is a protocol for communicating with Tanmatsu over USB. It allows you to manage apps, settings and files on the device via WebUSB applications in Chromium based browsers or a Python script.
 

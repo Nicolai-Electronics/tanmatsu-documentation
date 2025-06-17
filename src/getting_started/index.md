@@ -1,9 +1,4 @@
----
-title: "Tanmatsu: getting started"
-linkTitle: "Getting started"
-nodateline: true
-weight: -1
----
+# Getting started
 
 ## Introduction
 

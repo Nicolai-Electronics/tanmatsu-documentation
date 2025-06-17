@@ -1,9 +1,4 @@
----
-title: "AppFS"
-linkTitle: "AppFS"
-nodateline: true
-weight: 2
----
+# AppFS
 
 AppFS is an [ESP-IDF component](https://components.espressif.com/components/badgeteam/appfs/versions/1.0.0) that implements a method for dynamically installing and loading firmware binaries. It implements a pseudo filesystem interface for storing firmwares and a bootloader modification which allows for starting firmwares from the AppFS partition.
 

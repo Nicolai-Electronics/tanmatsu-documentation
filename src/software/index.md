@@ -1,9 +1,4 @@
----
-title: "Tanmatsu: software"
-linkTitle: "Software"
-nodateline: true
-weight: 2
----
+# Software
 
 ## Work in progress
 
@@ -16,9 +11,9 @@ The invisible though crucial part of all software running on Tanmatsu. These ESP
 | Component                     | Status                 | Repository                                                                                                              |
 |-------------------------------|------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | MIPI DSI display              | Published              | [esp32-component-mipi-dsi-abstraction](https://github.com/Nicolai-Electronics/esp32-component-mipi-dsi-abstraction)     |
-| Coprocessor                   | In progress            | ~~[esp32-component-tanmatsu-coprocessor](https://github.com/Nicolai-Electronics/esp32-component-tanmatsu-coprocessor)~~ |
+| Coprocessor                   | In progress            | [esp32-component-tanmatsu-coprocessor](https://github.com/Nicolai-Electronics/esp32-component-tanmatsu-coprocessor)     |
 | ES8156 audio DAC              | Published              | [esp32-component-es8156](https://github.com/Nicolai-Electronics/esp32-component-es8156)                                 |
-| BMI270 IMU                    | In progress            | ~~[esp32-component-bmi270](https://github.com/Nicolai-Electronics/esp32-component-bmi270)~~                             |
+| BMI270 IMU                    | In progress            | [esp32-component-bmi270](https://github.com/Nicolai-Electronics/esp32-component-bmi270)                                 |
 
 #### MIPI DSI display
 

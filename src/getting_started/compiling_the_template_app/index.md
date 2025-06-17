@@ -1,9 +1,4 @@
----
-title: "Compiling the template app"
-linkTitle: "Compiling the template app"
-nodateline: true
-weight: 2
----
+# Compiling the template app
 
 ## Setting up the environment on Windows
 
