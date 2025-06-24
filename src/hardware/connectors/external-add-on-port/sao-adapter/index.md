@@ -1,9 +1,4 @@
----
-title: "SAO adapter"
-linkTitle: "SAO adapter"
-nodateline: true
-weight: 1
----
+# SAO adapter
 
 The CATT to SAO adapter is a small adapter board that converts the external add-on port of Tanmatsu into a standard "Simple Add-On" port as found on various event badges.
 
