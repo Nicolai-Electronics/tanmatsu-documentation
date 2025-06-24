@@ -1,5 +1,9 @@
 # Internal add-on port
 
+```{toctree}
+:hidden:
+```
+
 This port is not exposed by default, and a modified back cover needs to be used to make it accessible. For this reason the port is also named the "internal expansion port".
 
 ## Pinout

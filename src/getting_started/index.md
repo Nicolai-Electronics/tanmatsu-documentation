@@ -61,3 +61,9 @@ The battery supplied with your Tanmatsu has a built-in protection circuit preven
 
 A Lithium Polymer battery that has reached a voltage below 2.5 volt for a prolonged period of time can become chemically unstable, we recommend replacing the battery if your battery has drained below 2.5 volt. Recharging a Lithium Polymer battery that has been subjected to a situation where it reached a voltage of less than 2.5 volt can be dangerous, the battery may for example swell up and could potentially damage the device or it's surroundings.
 
+```{toctree}
+:hidden:
+
+self
+compiling_the_template_app/index
+```
