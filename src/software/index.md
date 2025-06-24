@@ -53,3 +53,12 @@ The LVGL BSP interface is a component providing the glue needed to use the LVGL 
 | BSP                           | In progress            | [esp32-component-badge-bsp](https://github.com/badgeteam/esp32-component-badge-bsp)                                     |
 | [AppFS](appfs)                | Published              | [esp32-component-appfs](https://github.com/badgeteam/esp32-component-appfs)                                             |
 | LVGL BSP interface            | In progress            |                                                                                                                         |
+
+```{toctree}
+:hidden:
+
+self
+appfs/index
+badgelink/index
+meshtastic/index
+```
