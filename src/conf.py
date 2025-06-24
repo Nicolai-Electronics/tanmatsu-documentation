@@ -51,7 +51,7 @@ html_logo = "_static/tanmatsu.png"
 html_theme_options = {
     'logo_only': True,
     'style_external_links': False,
-    'style_nav_header_background': 'white',
+    'style_nav_header_background': '#F04300',
 }
 
 html_context = {
