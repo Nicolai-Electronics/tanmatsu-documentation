@@ -1,9 +1,4 @@
----
-title: "Tanmatsu: internal add-on port"
-linkTitle: "Internal add-on port"
-nodateline: true
-weight: 1
----
+# Internal add-on port
 
 This port is not exposed by default, and a modified back cover needs to be used to make it accessible. For this reason the port is also named the "internal expansion port".
 

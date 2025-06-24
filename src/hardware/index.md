@@ -129,3 +129,12 @@ The ESP32-C6 based module provides the board with access to WiFi, BLE and IEEE80
 By default the ESP32-C6 module runs a firmware called `ESP-Hosted-MCU`. This firmware allows the ESP32-P4 to make use of the WiFi and BLE functionality of the radio via the SDIO bus.
 
 Adding support for the 802.15.4 mesh functionality of the ESP32-C6 module and the LoRa radio to the SDIO interface exposed by the `ESP-Hosted-MCU` firmware is planned.
+
+```{toctree}
+:hidden:
+
+self
+specifications/index
+connectors/index
+case/index
+```

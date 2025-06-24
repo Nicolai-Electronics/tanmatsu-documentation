@@ -1,9 +1,4 @@
----
-title: "Tanmatsu: specifications"
-linkTitle: "Specifications"
-nodateline: true
-weight: 1
----
+# Specifications
 
 This section lists the technical specifications of the Tanmatsu hardware.
 

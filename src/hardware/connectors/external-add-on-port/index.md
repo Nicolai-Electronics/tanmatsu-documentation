@@ -1,9 +1,4 @@
----
-title: "Tanmatsu: external add-on port"
-linkTitle: "External add-on port"
-nodateline: true
-weight: 1
----
+# External add-on port
 
 The external expansion port (CATT, for "Connect All The Things") on Tanmatsu has been designed to be compatible with both PMOD and SAO add-on boards, in addition to it being a port that exposes 8 GPIOs and 3.3v power it can also be used as JTAG interface for the ESP32-P4.
 
