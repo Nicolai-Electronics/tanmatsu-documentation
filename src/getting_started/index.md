@@ -78,9 +78,9 @@ PORT=/dev/cu.usbmodem1301 make monitor
 
 Change PORT to match what device name your Tanmatsu gets when you connect it to your computer. cu.usbmodem1301 is for Mac OS.
 
-Monitor function automatically decode stacktraces.
+The monitor function automatically decodes stacktraces and other addresses, making it easier to understand a crash when it happens.
 
-You might need to kill the monitor process to quit the monitor function. At least for Mac OS.
+To exit the monitor press Ctrl-]. For more information check out the [ESP-IDF documentation](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/tools/idf-monitor.html#idf-monitor).
 
 ```{toctree}
 :hidden:
