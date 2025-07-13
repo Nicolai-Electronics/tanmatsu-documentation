@@ -54,6 +54,31 @@ It is:
 
 Expected behavior is that the LED blinks rapidly for a second when powering the board using the USB-C connector while there is no battery connected before turning off once the coprocessor starts up and instructs the power management chip to stop charging. If the LED continues to blink rapidly this could indicate that the coprocessor is not functioning.
 
+### LED orders and colors
+
+The LED order is as follows:
+* LED0: Power LED
+* LED1: Radio
+* LED2: Messages
+* LED3: Powerbutton LED
+* LED4: A
+* LED5: B
+
+The color order is GRB. This means the following code will set the first LED to green:
+
+```C
+uint8_t led_data[] = {
+    0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+};
+bsp_led_write(led_data, sizeof(led_data));
+```
+
+The LED order is:
+```
+LED0-G, LED0-R, LED0-B, ..... , LED5-G, LED5-R, LED5-B,
+```
+For the array the prevouis example.
+
 ## Buttons
 
 Tanmatsu has three buttons on the right side of the device. From top to bottom these buttons have the following functions:
