@@ -49,6 +49,25 @@ There is a small red LED on the back of the mainboard. This LED provides additio
  
 PMIC stands for "Power Management Integrated Circuit". Tanmatsu uses a BQ25895 PMIC from Texas Instruments to manage battery charging.
 
+## Audio
+The audio uses a I2S (Sound over I2C). Read more here to get an understanding of I2S: [CircuitLab](https://circuitlabs.net/i2s-audio-codec-integration-with-esp-idf/)
+
+The BSP library takes care of a lot of initialiazing so it is easier to get started make your Tanmatsu do some interrestning sounds.
+
+The following snippet will give you the handle to use to play sounds
+
+```C
+#include "bsp/audio.h"
+.......
+i2s_chan_handle_t my_i2s_handle = NULL;
+bsp_audio_initialize((uint32_t)PLAYBACK_SAMPLE_RATE); //Initalize the handle using the wanted sample rate
+bsp_audio_set_volume(60);  //Setting the volume in percentage%
+bsp_audio_set_amplifier(true); //Enable speaker
+bsp_audio_get_i2s_handle(&my_i2s_handle); //Get the prepared handle
+```
+
+Then you can use the `playback_sine_wave_task` function from [CircuitLab](https://circuitlabs.net/i2s-audio-codec-integration-with-esp-idf/). This will create a task that will run in the background and play a 440hz tone.
+
 ### Fault conditions
 
 A fault doesn't immediately mean there is anything wrong with your Tanmatsu and using a Lithium Polymer battery is not dangerous if the battery is handled correctly. Tanmatsu contains a multiple layers of protection to prevent any damage to your device, the battery or it's surroundings. If charging is stopped due to a fault then most likely there is something wrong with your battery, though this doesn't immediately have to be a problem.
