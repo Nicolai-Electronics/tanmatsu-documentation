@@ -1,10 +1,13 @@
 # Software
 
-## Work in progress
+```{toctree}
+compiling_the_template_app/index
+appfs/index
+badgelink/index
+meshtastic/index
+```
 
-The software for Tanmatsu is currently under active development. On this page we will regulary post updates on our progress. Don't want to miss out on any updates? Join our Discord or Telegram groups.
-
-### Device drivers
+## Device drivers
 
 The invisible though crucial part of all software running on Tanmatsu. These ESP-IDF components provide  the building blocks for interfacing with the hardware on the Tanmatsu mainboard.
 
@@ -15,19 +18,19 @@ The invisible though crucial part of all software running on Tanmatsu. These ESP
 | ES8156 audio DAC              | Published              | [esp32-component-es8156](https://github.com/Nicolai-Electronics/esp32-component-es8156)                                 |
 | BMI270 IMU                    | In progress            | [esp32-component-bmi270](https://github.com/Nicolai-Electronics/esp32-component-bmi270)                                 |
 
-#### MIPI DSI display
+### MIPI DSI display
 
 The Tanmatsu has a MIPI DSI display with a ST7701 controller. Espressif provides a driver for this controller, we added the correct initialization commands and configuration for the display on the Tanmatsu and packaged these in a component. In addition to the configuration of the Tanmatsu display the display included with the Espressif ESP32-P4 devkit is also supported by this component, allowing for easy switching between Tanmatsu hardware and the ESP32-P4 devkit.
 
-#### Coprocessor
+### Coprocessor
 
 This driver component manages communication with the coprocessor firmware via I2C and exposes functions for accessing all coprocessor functionality.
 
-#### ES8156 audio DAC
+### ES8156 audio DAC
 
 This driver component allows for configuring the ES8156 audio DAC via I2C.
 
-#### BMI270 IMU
+### BMI270 IMU
 
 This driver component wraps the Bosch SDK for the BMI270 IMU, implementing communication via I2C for the ESP32-P4.
 
@@ -51,14 +54,5 @@ The LVGL BSP interface is a component providing the glue needed to use the LVGL 
 | Component                     | Status                 | Repository                                                                                                              |
 |-------------------------------|------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | BSP                           | In progress            | [esp32-component-badge-bsp](https://github.com/badgeteam/esp32-component-badge-bsp)                                     |
-| [AppFS](appfs)                | Published              | [esp32-component-appfs](https://github.com/badgeteam/esp32-component-appfs)                                             |
+| {doc}`/software/appfs/index`  | Published              | [esp32-component-appfs](https://github.com/badgeteam/esp32-component-appfs)                                             |
 | LVGL BSP interface            | In progress            |                                                                                                                         |
-
-```{toctree}
-:hidden:
-
-self
-appfs/index
-badgelink/index
-meshtastic/index
-```

@@ -67,3 +67,5 @@ The `+` button as well as all the keys of the keyboard on the front of the devic
 The `-` button is directly connected to `GPIO35` of the ESP32-P4 and is mapped to the `BSP_INPUT_NAVIGATION_KEY_VOLUME_DOWN` navigation event in the board support package (BSP) software component.
 
 All the keyboard buttons are mapped to `INPUT_EVENT_TYPE_SCANCODE` events by the board support component (BSP), presenting a PC keyboard compatible scancode. In addition the BSP presents the keyboard buttons as `INPUT_EVENT_TYPE_NAVIGATION` and `INPUT_EVENT_TYPE_KEYBOARD` events too. Navigation keys trigger the navigation event while the letters and numbers trigger the keyboard event. The keyboard event contains the character on the keyboard button both as ASCII char and UTF-8 string, automatically incorporating the state of the modifier keys (`SHIFT` and `ALT GR`).
+
+![Block diagram (2)](blockdiagram2.png)

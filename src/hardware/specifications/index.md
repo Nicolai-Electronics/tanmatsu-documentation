@@ -14,10 +14,6 @@ Size of the device including the 3D printed case:
 
 Weight: 215 g (0.47 pounds) including case and battery
 
-## Case
-
-See [case](../case).
-
 ## Peripherals
 
 ### Display

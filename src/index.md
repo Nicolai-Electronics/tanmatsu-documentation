@@ -75,7 +75,7 @@ More information about the planned personality modules will be made available so
 :hidden:
 
 self
-getting_started/index
+user_manual/index
 hardware/index
 software/index
 ```
