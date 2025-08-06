@@ -1,13 +1,14 @@
 # Hardware
 
 ```{toctree}
-:hidden:
-
+:maxdepth: 2
 self
 specifications/index
 connectors/index
 case/index
 ```
+
+## Overview
 
 This page describes all the hardware on the Tanmatsu main board, explaining how everything is connected.
 
@@ -24,7 +25,7 @@ It is directly connected to a lot of peripherals:
  - I2C/I3C interface: to the QWIIC port
  - I2C interface: to an I2C bus connecting all the peripherals on the main board to each other
 
-## LEDs
+### LEDs
 
 Tanmatu has seven LEDs, six of which are addressable RGB LEDs located on the left and right sides of the screen. The seventh LED is located on the back of the board next to the USB-C connector.
 
@@ -54,7 +55,7 @@ It is:
 
 Expected behavior is that the LED blinks rapidly for a second when powering the board using the USB-C connector while there is no battery connected before turning off once the coprocessor starts up and instructs the power management chip to stop charging. If the LED continues to blink rapidly this could indicate that the coprocessor is not functioning.
 
-### LED orders and colors
+#### LED orders and colors
 
 The LED order is as follows:
 * LED0: Power LED
@@ -79,7 +80,7 @@ LED0-G, LED0-R, LED0-B, ..... , LED5-G, LED5-R, LED5-B,
 ```
 For the array the prevouis example.
 
-## Buttons
+### Buttons
 
 Tanmatsu has three buttons on the right side of the device. From top to bottom these buttons have the following functions:
 
