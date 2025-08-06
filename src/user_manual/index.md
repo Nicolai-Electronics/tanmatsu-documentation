@@ -70,3 +70,24 @@ A situation that can trigger the under-voltage protection is a situation where t
 The battery supplied with your Tanmatsu has a built-in protection circuit preventing the battery from draining below it's minimum rated voltage during normal use.
 
 A Lithium Polymer battery that has reached a voltage below 2.5 volt for a prolonged period of time can become chemically unstable, we recommend replacing the battery if your battery has drained below 2.5 volt. Recharging a Lithium Polymer battery that has been subjected to a situation where it reached a voltage of less than 2.5 volt can be dangerous, the battery may for example swell up and could potentially damage the device or it's surroundings.
+
+#### Debug connection
+
+To connect to the USB debug, use the monitor function from ESP-IDF. Remember to have the USB function in debug mode.
+
+The flow is as following:
+* Set the USB in USB mode
+* Compile the app
+* Upload the app using bagdelink
+* Set the USB to debug mode (such that the small bug is visible)
+* Run the following command in your app folder to monitor the app:
+
+```bash
+PORT=/dev/cu.usbmodem1301 make monitor
+```
+
+Change PORT to match what device name your Tanmatsu gets when you connect it to your computer. cu.usbmodem1301 is for Mac OS.
+
+The monitor function automatically decodes stacktraces and other addresses, making it easier to understand a crash when it happens.
+
+To exit the monitor press Ctrl-]. For more information check out the [ESP-IDF documentation](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/tools/idf-monitor.html#idf-monitor).
