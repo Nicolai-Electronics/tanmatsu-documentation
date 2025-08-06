@@ -1,6 +1,7 @@
 # Software
 
 ```{toctree}
+:maxdepth: 2
 compiling_the_template_app/index
 appfs/index
 badgelink/index
