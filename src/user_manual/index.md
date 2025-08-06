@@ -31,11 +31,11 @@ The `audio` connector allows for connecting headphones. The audio codec on Tanma
 
 ### Left side
 
-
+tbd
 
 ### Top side
 
-
+tbd
 
 ## Charging your Tanmatsu
 
