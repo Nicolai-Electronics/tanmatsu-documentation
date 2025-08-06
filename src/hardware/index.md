@@ -2,7 +2,6 @@
 
 ```{toctree}
 :maxdepth: 2
-self
 specifications/index
 connectors/index
 case/index
