@@ -6,6 +6,7 @@ compiling_the_template_app/index
 appfs/index
 badgelink/index
 meshtastic/index
+esp_idf_from_scratch/index
 ```
 
 ## Device drivers
