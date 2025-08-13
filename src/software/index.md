@@ -7,6 +7,7 @@ appfs/index
 badgelink/index
 meshtastic/index
 esp_idf_from_scratch/index
+flash_layout/index
 ```
 
 ## Device drivers
