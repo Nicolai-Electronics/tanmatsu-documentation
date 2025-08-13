@@ -1,4 +1,4 @@
-<img width="85" height="17" alt="image" src="https://github.com/user-attachments/assets/048f4440-54fa-4ddb-8a19-298efb55bf99" /># ESP32-P4 flash layout
+# ESP32-P4 flash layout
 
 The ESP32-P4 application processor has a 16MB flash chip attached to it for storing firmware, applications and files.
 
