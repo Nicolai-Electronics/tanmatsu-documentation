@@ -4,6 +4,7 @@
 :maxdepth: 2
 specifications/index
 connectors/index
+i2c/index
 case/index
 ```
 
