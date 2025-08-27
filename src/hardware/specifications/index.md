@@ -147,9 +147,9 @@ The firmware of the coprocessor can be updated from the ESP32-P4 application pro
 
 ### LoRa radio
 
-The PCB footprint supports a range of radio modules from [Ai-Thinker](https://ai-thinker.eu/). Software support will initially be provided for the [RA-01SH](https://docs.ai-thinker.com/_media/lora/docs/ra-01sh_specification.pdf) 868 MHz band [SX1262](https://www.semtech.com/products/wireless-rf/lora-connect/sx1262) based and the RA-01S 433 MHz band [SX1268](https://www.semtech.com/products/wireless-rf/lora-connect/sx1268) based modules.
+Tanmatsu comes with either an E22-900M22S (for 868/915MHz band) or an E22-400M22S (for 433MHz band) LoRa module preinstalled. The module has an IPEX-1 antenna connector, which is connected to an IPEX-1 to SMA adapter coax cable on Tanmatsus with an external LoRa antenna and directly via a coax cable to a flexible PCB antenna on Tanmatsus with an internal LoRa antenna.
 
-All Tanmatsu boards will be delivered with a module which has the IPEX-1 antenna connector installed. Optionally an SMA antenna connector can be installed to allow connecting standard external LoRa antennas. Tanmatsu will be provided with either an internal IPEX-1 antenna or a basic SMA antenna depending on the option chosen.
+Currently only the E22-900M22S (868/915MHz band) with external antenna variant is available for pre-order.
 
 ### Audio
 
