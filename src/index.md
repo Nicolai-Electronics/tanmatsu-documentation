@@ -12,9 +12,46 @@ We have published an issue tracker on Github, where you can follow our project p
 
 You can find out what we are currently working on in the [Github project](https://github.com/orgs/Nicolai-Electronics/projects/2/views/2).
 
-If you have a suggestion or bugreport you can create an issue on the [issue tracker](https://github.com/Nicolai-Electronics/tanmatsu-issue-tracker/issues).
+If you have a suggestion or bug report you can create an issue on the [issue tracker](https://github.com/Nicolai-Electronics/tanmatsu-issue-tracker/issues).
 
 And if you have questions or just want to ask something, feel free to ask anything you want over at our [Discord community](https://discord.gg/KkY6JqNCqT).
+
+## When will my pre-order ship? [Last update 10-10-2025]
+
+We're currently waiting for the manufacturer to ship the assembled mainboards to us. We expect those to arrive next week, if we're unlucky the week after.
+After the mainboards arrive we will assemble the devices in batches, all the other parts needed for that (case, speaker, battery, display, keyboard & antenna) are all in stock and ready.
+
+We will start shipping to all non-USA addresses immediately after, starting with the earliest order.
+
+After all non-USA pre-orders have shipped we will start shipping the orders going to the USA.
+
+This section of the documentation website will be updated when more information is available.
+
+### Why are orders to USA addresses delayed?
+
+US customs has introduced a non-standard way of tariff handling. Instead of the normal procedure that the rest of the world uses where a bill is sent by the receiver of a parcel when importing goods US customs has implemented a very convoluted system of charging the sender of a parcel after the parcel has shipped.
+
+We are currently working on getting the contracts in place that allow us to ship to the USA again.
+
+After those contracts are in place will verify that our calculations for the tariffs are correct before shipping any other parcel to the USA.
+
+Once the exact tariff amount is clear we will put a surcharge on all USA orders that has to be paid in full before we ship the parcel.
+
+It appears that US customs unfortunately does not just ask for the tariff percentage of 15% but also charges a significant handling fee.
+
+### How much will the USA tariff costs be?
+
+The shipping company (PostNL) sent over a [link to an online calculator tool](https://tariffs.flexport.com/?entryDate=2025-09-15&country=NL&advanced=true&kotlinCalculator=true&useApi=true&modeOfTransport=AIR&htsCode=8471900000&value=117&FIELD_CHOSEN_HTS_CODES={"99039406"%3Afalse}&FIELD_CHOSEN_SPIS={}) to get an estimation of the amount US customs charges.
+
+What this (as of writing) shows is an estimation of $18 (€ 15,33) for the 15% duty rate, but also a processing fee charged by US customs on top of the tariff of $33 (€ 28,11). In addition PostNL charges a fee for submitting the customs declaration. For that they want €0,45 + 2% of the duty paid to US customs. 2% of € 43,44 is € 0.87
+
+Our expectation is thus that the total amount of tariff and import duties to be paid will thus be:
+
+15,33 + 43,44 + 0,45 + 0,87 = € 60,09
+
+Or converted back into USD: $ 70,56
+
+We are looking into utilizing a distribution center in the USA to allow spreading the processing fee across multiple orders.
 
 ## Features
 
