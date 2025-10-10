@@ -25,9 +25,9 @@ We will start shipping to all non-USA addresses immediately after, starting with
 
 After all non-USA pre-orders have shipped we will start shipping the orders going to the USA.
 
-This section of the documentation website will be updated when more information is available.
+This section of the documentation website will be updated often so be sure to check for updates now and then.
 
-### Why are orders to USA addresses delayed?
+#### Why are orders to USA addresses delayed?
 
 US customs has introduced a non-standard way of tariff handling. Instead of the normal procedure that the rest of the world uses where a bill is sent by the receiver of a parcel when importing goods US customs has implemented a very convoluted system of charging the sender of a parcel after the parcel has shipped.
 
@@ -39,7 +39,7 @@ Once the exact tariff amount is clear we will put a surcharge on all USA orders 
 
 It appears that US customs unfortunately does not just ask for the tariff percentage of 15% but also charges a significant handling fee.
 
-### How much will the USA tariff costs be?
+#### How much will the USA tariff costs be?
 
 The shipping company (PostNL) sent over a [link to an online calculator tool](https://tariffs.flexport.com/?entryDate=2025-09-15&country=NL&advanced=true&kotlinCalculator=true&useApi=true&modeOfTransport=AIR&htsCode=8471900000&value=117&FIELD_CHOSEN_HTS_CODES={"99039406"%3Afalse}&FIELD_CHOSEN_SPIS={}) to get an estimation of the amount US customs charges.
 
@@ -52,6 +52,10 @@ Our expectation is thus that the total amount of tariff and import duties to be 
 Or converted back into USD: $ 70,56
 
 We are looking into utilizing a distribution center in the USA to allow spreading the processing fee across multiple orders.
+
+### Price increase after pre-order period ends
+
+If you're still in doubt, grab your chance now as we will (unfortunately have to) increase the price of Tanmatsu slightly after the pre-order period ends.
 
 ## Features
 
