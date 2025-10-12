@@ -27,6 +27,8 @@ After all non-USA pre-orders have shipped we will start shipping the orders goin
 
 This section of the documentation website will be updated often so be sure to check for updates now and then.
 
+### USA specific information
+
 #### Why are orders to USA addresses delayed?
 
 US customs has introduced a non-standard way of tariff handling. Instead of the normal procedure that the rest of the world uses where a bill is sent by the receiver of a parcel when importing goods US customs has implemented a very convoluted system of charging the sender of a parcel after the parcel has shipped.
@@ -119,4 +121,5 @@ self
 user_manual/index
 hardware/index
 software/index
+add-on/index
 ```
