@@ -6,17 +6,23 @@ Tanmatsu uses two ESP32 chips, one as application processor and one as radio. Th
 
 A tool for flashing Meshtastic or the default "ESP-HOSTED" firmware to the radio will soon be provided as a web application making use of Webserial to connect to your Tanmatsu. It is also possible to flash firmware to the radio using esptool.py, the flashing script provided by Espressif. This guide explains how to flash Meshtastic using esptool.py, which is assumed to be installed and available on your system.
 
-{{% alert title="Stability" color="warning" %}}
-This software is not stable yet, you will experience crashes, mostly of the GUI software. We hope to resolve these issues soon but keep this in mind when you install the app.
-{{% /alert %}}
+ - This software is not stable yet, you will experience crashes, mostly of the GUI software. We hope to resolve these issues soon but keep this in mind when you install the app.
+ - BLE does not work properly due to a bug in the Meshtastic radio firmware. You can connect to the radio using the official Meshtastic frontend apps in the webbrowser and on your phone over USB and WiFi without issues. This is a software bug in the Meshtastic firmware on all ESP32-C6 targets which we hope gets resolved soon.
 
-{{% alert title="BLE" color="warning" %}}
-BLE does not work properly due to a bug in the Meshtastic radio firmware. You can connect to the radio using the official Meshtastic frontend apps in the webbrowser and on your phone over USB and WiFi without issues. This is a software bug in the Meshtastic firmware on all ESP32-C6 targets which we hope gets resolved soon.
-{{% /alert %}}
+## Using the web recovery site
+
+Using the web recovery to replace the launcher with the Meshtastic frontend and the ESP-HOSTED radio firmware with Meshtastic is currently the most stable and preferred way of installing Meshtastic on Tanmatsu. You can find the recovery website at [recovery.tanmatsu.cloud/](https://recovery.tanmatsu.cloud/). A Chromium based browser (Chrome, Edge, Opera etc...) is required as this website uses webserial to communicate with the chips in Tanmatsu.
+
+If your Tanmatsu is stuck in a bootloop simply hold down the third button on the right side of the device while powering on the device to start the ESP32-P4 in bootloader mode.
+
+Flashing Meshtastic or the launcher firmware happens in two stages: first flash the application processor by connecting to the first serial port exposed by the device. After flashing turn the device off and on again to start the ESP32-P4 application processor. When the frontend is running the ESP32-C6 radio will be enabled which should expose a second serial port, connect to that port then flash the radio firmware. If the second serial port does not show up press Fn + orange triangle on the homescreen of the launcher firmware to force the radio into bootloader mode.
+
+After flashing the radio again turn your Tanmatsu off and on again, you should now be greeted by the Meshtastic initial setup menu.
+
 
 ## Requirements
 
- - [Package containing builds of the Meshtastic radio firmware and GUI application](tanmatsu-meshtastic-preview.zip)
+ - [Package containing builds of the Meshtastic radio firmware and GUI application](tanmatsu-meshtastic-preview.zip) **OUTDATED, will be updated to match the recovery website soon**
  - [BadgeLink tools](https://github.com/badgeteam/esp32-component-badgelink/releases/download/v0.0.2/tools.zip)
  - [Esptool](https://docs.espressif.com/projects/esptool/en/latest/esp32/installation.html)
  
