@@ -61,7 +61,7 @@ The LED order is as follows:
 * LED0: Power LED
 * LED1: Radio
 * LED2: Messages
-* LED3: Powerbutton LED
+* LED3: Power button LED
 * LED4: A
 * LED5: B
 
@@ -95,3 +95,14 @@ The `-` button is directly connected to `GPIO35` of the ESP32-P4 and is mapped t
 All the keyboard buttons are mapped to `INPUT_EVENT_TYPE_SCANCODE` events by the board support component (BSP), presenting a PC keyboard compatible scancode. In addition the BSP presents the keyboard buttons as `INPUT_EVENT_TYPE_NAVIGATION` and `INPUT_EVENT_TYPE_KEYBOARD` events too. Navigation keys trigger the navigation event while the letters and numbers trigger the keyboard event. The keyboard event contains the character on the keyboard button both as ASCII char and UTF-8 string, automatically incorporating the state of the modifier keys (`SHIFT` and `ALT GR`).
 
 ![Block diagram (2)](blockdiagram2.png)
+
+### Fasteners
+
+Tanmatsu uses the following fasteners:
+
+ - The front panel is attached using M2x5mm bolts
+ - The back cover is attached using M2x15m bolts
+ - The spacer contains M2 nuts for the bolts holding on the back cover to screw into
+
+ The bolts that come with Tanmatsu use a 1.5mm hex style head.
+ 
