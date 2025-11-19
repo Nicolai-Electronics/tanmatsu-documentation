@@ -81,6 +81,6 @@ The binary which can be installed on the target device can be found at `build/ta
 
 You can choose to install your app as the main firmware for the target device, however do note that this will overwrite the launcher and all other already installed data on your device.
 
-~~Instead of directly flashing the application we recommend using BadgeLink either via a compatible browser or using the commandline utilities to install your application via the USB port.~~
+For debugging this is the easiest way of working, however if you want to use your Tanmatsu for more applications you can use [BadgeLink](/software/badgelink) to install the app to the AppFS partition.
 
-**The BadgeLink tools are not yet available but will be released soon. This page will be updated when the tools have been made available.**
+If you have installed your firmware in place of the launcher firmware you can easily restore the launcher firmware using the [recovery website](https://recovery.tanmatsu.cloud).
