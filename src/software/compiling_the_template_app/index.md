@@ -1,5 +1,10 @@
 # Compiling the template app
 
+```{toctree}
+:maxdepth: 2
+manjaro_arch/index
+```
+
 ## Setting up the environment on Windows
 
 On Windows we recommend using WSL (Windows Subsystem for Linux) to create a virtual Linux environment to work in.
