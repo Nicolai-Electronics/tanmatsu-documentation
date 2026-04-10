@@ -4,6 +4,8 @@
 
 The internal I2C bus facillitates communication between the ESP32-P4 application processor and the on-board peripherals of Tanmatsu.
 
+The pins of the internal I2C bus are GPIO 9 (SDA) and GPIO 10 (SCL).
+
 | Device                    | Role       | Address | Description                                                              |
 |---------------------------|------------|---------|--------------------------------------------------------------------------|
 | ESP32-P4                  | Controller | -       | Runs user application                                                    |
