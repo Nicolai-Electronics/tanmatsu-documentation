@@ -17,7 +17,7 @@ from get_github_rev import get_github_rev
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Tanmatsu'
-copyright = '2025 Nicolai Electronics - CC-BY 4.0 license'
+copyright = '2025-2026 Nicolai Electronics - CC-BY 4.0 license'
 author = 'Nicolai Electronics'
 release = ''
 
