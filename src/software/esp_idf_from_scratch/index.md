@@ -17,10 +17,10 @@ Create a new folder in a place you can access, make sure there are no spaces in 
 
 Find the [release of ESP-IDF](https://github.com/espressif/esp-idf/releases/) you want to use and inside of your new project folder execute the `git clone` command detailed in the release notes.
 
-For ESP-IDF version 5.5 the `git clone` command is:
+For ESP-IDF version 5.5.2 the `git clone` command is:
 
 ```
-git clone -b v5.5 --recursive https://github.com/espressif/esp-idf.git esp-idf-v5.5
+git clone -b v5.5.2 --recursive https://github.com/espressif/esp-idf.git esp-idf-v5.5
 ```
 
 ## Installing ESP-IDF
@@ -135,12 +135,12 @@ Simply run the flash and monitor command (`idf.py build flash monitor --port /de
 Exit out of the monitor (`CTRL+]`). Then add the `badge-bsp` component using the command:
 
 ```
-idf.py add-dependency "badgeteam/badge-bsp^0.3.0" 
+idf.py add-dependency "badgeteam/badge-bsp^1.0.0" 
 ```
 
 Also take a look at [components.espressif.com](https://components.espressif.com/) for more fun libraries you can use in your projects.
 
-After adding the `badge-bsp` component to your project you can use the BSP to initialize the peripherals of the board. To do that add the `#include "bsp/device.h"` header to your `hello_world.c` file and run `bsp_device_initialize();` in your `app_main()` function.
+After adding the `badge-bsp` component to your project you can use the BSP to initialize the peripherals of the board. To do that add the `#include "bsp/device.h"` header to your `hello_world.c` file and run `bsp_device_initialize(...);` in your `app_main()` function.
 
 Your `hello_world.c` will look like this:
 
@@ -150,21 +150,40 @@ Your `hello_world.c` will look like this:
 
 void app_main(void)
 {
-    bsp_device_initialize();
+    const bsp_configuration_t bsp_configuration = {
+        .display =
+            {
+                .requested_color_format = BSP_DISPLAY_COLOR_FORMAT_24_888RGB,
+                .num_fbs                = 1,
+            },
+    };
+
+    esp_err_t res = bsp_device_initialize(&bsp_configuration);
+    if (res != ESP_OK) {
+      printf("Failed to initialize BSP\r\n");
+      return;
+    }
+
     printf("Hello world!\r\n");
 }
 
 ```
 
-Currently the `badge-bsp` component requires that the `RTC retained memory` has a user section. This is not enabled by default. To enable this feature of ESP-IDF run:
+Note: the color format provided can differ from the requested color format depending on the target hardware, for Tanmatsu 888RGB and 565RGB are both valid options which will be honoured, but for other targets this does not have to be the case.
+
+The `badge-bsp` component needs to be configured to target the Tanmatsu, by default it will target a stub target. You can select Tanmatsu as target using menuconfig:
 
 ```
 idf.py menuconfig
 ```
 
-Using the menuconfig screen you can change the configuration of the SDK. In this case navigate to `Bootloader config --->` and select the `Reserve RTC FAST memory for custom purposes` option. Then set the `Size in bytes for custom purposes` option to `0x100`.
+Using the menuconfig screen go to `Component config -->`, `Badge.Team BSP -->`, `Board (...) -->` and select `Nicolai Electronics Tanmatsu` from the list.
 
-For ESP32-P4 projects enabling the `experimental` high speed PSRAM feature is a must. On Tanmatsu your app will not have enough memory for the framebuffer otherwise. If you were to run your app as-is it would crash with the following error:
+In addition to the target selection there are other options that need to be configured. Currently the `badge-bsp` component requires that the `RTC retained memory` has a user section. This is not enabled by default.
+
+To change this setting go back to the main menu of the menuconfig screen (`ESC`), then navigate to `Bootloader config --->` and select the `Reserve RTC FAST memory for custom purposes` option. Then set the `Size in bytes for custom purposes` option to `0x100`.
+
+Third, for ESP32-P4 projects (Tanmatsu projects) enabling the `experimental` high speed PSRAM feature is a must. On Tanmatsu your app will not have enough memory for the framebuffer otherwise. If you were to run your app as-is it would crash with the following error:
 
 ```
 E (230) lcd.dsi.dpi: esp_lcd_new_panel_dpi(226): no memory for frame buffer
@@ -177,4 +196,4 @@ Press `q` to quit, then press `y` to save.
 
 Now run `idf.py build flash monitor --port /dev/ttyACM0` again to build, flash and monitor the app.
 
-You are now ready to start using the project you created to do awesome things. More information about `badge-bsp` will soon be published.
+You are now ready to start using the project you created to do awesome things!
