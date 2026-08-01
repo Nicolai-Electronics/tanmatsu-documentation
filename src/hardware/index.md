@@ -6,6 +6,7 @@ specifications/index
 connectors/index
 i2c/index
 case/index
+keyboard/index
 ```
 
 ## Overview
