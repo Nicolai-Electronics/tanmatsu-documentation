@@ -9,6 +9,8 @@ self
 
 Congratulations! You just got your hands on your Tanmatsu, we bet you're excited to get started so let's not delay and get right to it!
 
+This section of the documentation website explains how to use your Tanmatsu. Information for developers can be found in the other sections.
+
 ## Connectors and buttons
 
 There are a lot of connectors and buttons on Tanmatsu, let's start with the basics: how do you turn the device on and off?
@@ -32,6 +34,8 @@ The `audio` connector allows for connecting headphones. The audio codec on Tanma
 ### Left side
 
 On the left side of the device you will find a USB-A host port, the SD card reader and the CATT connector.
+
+![Left side of Tanmatsu](left_side.png)
 
 The USB-A port is connected directly to the ESP32-P4 application processor and is capable of 480mbit USB 2.0 speeds. The launcher software currently does not implement any functionality that utilizes this port but apps can of course make use of it.
 
