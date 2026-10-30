@@ -35,7 +35,7 @@ Either clone the template repository or first use the template on Github to set 
 Then clone your repository into the Ubuntu environment:
 
 ```
-git clone https://github.com/Nicolai-Electronics/tanmatsu-template-pax
+git clone https://github.com/Nicolai-Electronics/tanmatsu-template
 ```
 
 Replace the URL in the command above with the URL of your repository.
@@ -44,13 +44,23 @@ Replace the URL in the command above with the URL of your repository.
 
 ### Step 4: install the ESP-IDF SDK
 
+There are two options for installing ESP-IDF, the SDK and toolchain for compiling ESP32 firmware, made by Espressif.
+
+*Option 1* is installing ESP-IDF into a subfolder of your project. This will make no system wide changes to your system but does require a copy of ESP-IDF per project folder. This can quickly fill up your hard-disk if you have many projects.
+
+*Option 2* is installing ESP-IDF system wide. For this you need the [Espressif Installation Manager](https://docs.espressif.com/projects/idf-im-ui/en/latest/). We recommend this option for developers working on multiple projects at once.
+
+The `Makefile` included with the template project automatically finds ESP-IDF. It does so by first looking for two files (`.IDF_PATH` and `.IDF_TOOLS_PATH`), which you could create to point to a specific copy of ESP-IDF and its toolchain. If those files do not exist then it will try to find subfolders in the project folder (`esp-idf` and `esp-idf-tools`). If those folders are also not found then it will look for `~/.espressif/<version>/esp-idf` and `~/.espressif/tools`, which is where the Espressif Installation Manager installs ESP-IDF to.
+
+#### Option 1: installing ESP-IDF into a subfolder
+
 First enter the folder into which you have cloned the repository.
 
 ```
-cd tanmatsu-template-pax
+cd tanmatsu-template
 ```
 
-Then run the following command to install ESP-IDF and the toolchain into subfolders of the working folder. The sdk and toolchain folders have been added to the `.gitignore` file so that they won't be committed into the repository when you commit your work.
+Then run the following command to install ESP-IDF and the toolchain into subfolders of the working folder. The SDK and toolchain folders have been added to the `.gitignore` file so that they won't be committed into the repository when you commit your work.
 
 ```
 make prepare
@@ -60,6 +70,21 @@ make prepare
 
 ![esp-idf-installed](esp_idf2.png)
 
+#### Option 2: installing ESP-IDF using EIM
+
+First install [Espressif Installation Manager](https://docs.espressif.com/projects/idf-im-ui/en/latest/) following the official guide. There is no need to install any version of ESP-IDF using the tool.
+
+After installing EIM, make sure to first enter the folder into which you have cloned the repository.
+
+```
+cd tanmatsu-template
+```
+
+Then run the following command to install ESP-IDF and the toolchain using EIM.
+
+```
+make eim-sdk
+```
 
 #### Step 5: compile the app
 
